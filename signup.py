@@ -36,22 +36,19 @@ class signup:
         self.darkGrey = (30, 30, 30)
         self.lightGrey = (200, 200, 200)
 
-        self.username = ""
-        self.password = ""
-        self.confirm = ""
         self.mouse = pg.mouse.get_pos()
         self.click = pg.mouse.get_pressed()
-        
-        self.userFlag = False
-        self.passFlag = False
-        self.confirmFlag = False
+
+        self.username = ["", False]
+        self.password = ["", False]
+        self.confirm = ["", False]
 
         self.headerRect = pg.Rect(0, 0, self.SW, self.HH)
 
         self.font = "Inter"
         self.size = 40
 
-        pg.display.set_caption("Figma")
+        pg.display.set_caption("Echo")
         pg.display.set_icon(pg.image.load("icons/logo.png"))
 
         self.header = [
@@ -131,14 +128,17 @@ class signup:
             self.textBox(120, 300, "Password:", self.black)
             self.textBox(120, 400, "Confirm Password:", self.black)
             self.username = self.textInput(
-                400, 200, 400, 50, "username", self.username, mouse, click, self.userFlag
+                400, 200, 400, 50, "username", self.username, mouse, click
             )  # pass identifier "username"
+
             self.password = self.textInput(
-                400, 300, 400, 50, "password", self.password, mouse, click, self.passFlag
+                400, 300, 400, 50, "password", self.password, mouse, click
             )  # pass identifier "password"
+
             self.confirm = self.textInput(
-                400, 400, 400, 50, "confirm", self.confirm, mouse, click, self.confirmFlag
+                400, 400, 400, 50, "confirm", self.confirm, mouse, click
             )  # pass identifier "confirm"
+
             self.Button(
                 400, 500, 400, 50, "Sign Up", self.lightGreen, self.green, "signup"
             )
@@ -167,39 +167,42 @@ class signup:
         self.screen.blit(text_surface, (x + 5, y + 5))
 
     def textInput(
-        self,
-        x,
-        y,
-        w,
-        h,
-        identifier,
-        text="",
-        mouse=[],
-        click=[],
-        flag = False
+        self, x, y, w, h, identifier, textAndFlag=["", False], mouse=[], click=[]
     ):
         # text = self.textInputs.get(
         #     identifier, ""
         # )  # get text for this text box from dictionary
         clear = ""
 
-        text = (
-            "mouse pos: " + str(mouse) + " click: " + str(click) + " flag: " + str(flag)
+        textAndFlag[0] = (
+            "mouse pos: "
+            + str(mouse)
+            + " click: "
+            + str(click)
+            + " flag: "
+            + str(textAndFlag[1])
         )
+
+        # txt = "mouse pos: " + str(mouse) + " click: " + str(click) + " flag: " + str(textAndFlag[1])
+
         pg.draw.rect(self.screen, self.black, (x, y, w, h), 2)
         pg.draw.rect(self.screen, self.lightGrey, (x + 2, y + 2, w - 4, h - 4))
         font = pg.font.SysFont(self.font, self.size)
-        text_surface = font.render(text, True, self.black)
+        text_surface = font.render(textAndFlag[0], True, self.black)
         self.screen.blit(text_surface, (x + 5, y + 5))
 
         # check if the user clicks on the text box
 
         if x < mouse[0] < x + w and y < mouse[1] < y + h:
             if click[0] == 1:
-                flag = True
+                textAndFlag[0] = textAndFlag[0]
+                textAndFlag[1] = True
+                return textAndFlag
         else:
             if click[0] == 1:
-                flag = False
+                textAndFlag[0] = textAndFlag[0]
+                textAndFlag[1] = False
+                return textAndFlag
 
         # while flag:
         # mouse = pg.mouse.get_pos()
@@ -217,20 +220,20 @@ class signup:
             #     flag = False
             if event.type == pg.KEYDOWN and flag:
                 if event.key == pg.K_BACKSPACE:
-                    text = text[:-1]
+                    textAndFlag[0] = textAndFlag[0][:-1]
                 elif event.key == pg.K_RETURN or self.isButtonClicked:
-                    self.textInputs[
-                        identifier
-                    ] = text  # store text for this text box in dictionary
-                    return text
+                    self.textInputs[identifier] = textAndFlag[
+                        0
+                    ]  # store text for this text box in dictionary
+                    return textAndFlag
                 else:
-                    text += event.unicode
+                    textAndFlag[0] += event.unicode
 
                 font = pg.font.SysFont(self.font, self.size - 5)
 
                 pg.draw.rect(self.screen, self.black, (x, y, w, h), 2)
                 pg.draw.rect(self.screen, self.lightGrey, (x + 2, y + 2, w - 4, h - 4))
-                text_surface = font.render(text, True, self.black)
+                text_surface = font.render(textAndFlag[0], True, self.black)
                 self.screen.blit(text_surface, (x + 5, y + 5))
 
                 # pg.display.update()
@@ -268,4 +271,5 @@ class signup:
 
 
 test = signup()
+# print(string(type()))
 test.Screen()

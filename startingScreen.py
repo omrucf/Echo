@@ -28,7 +28,7 @@ class startingScreen:
         self.font = "Inter"
         self.size = 40
 
-        pg.display.set_caption("Figma")
+        pg.display.set_caption("Echo")
         pg.display.set_icon(pg.image.load("icons/logo.png"))
 
         self.header = [
