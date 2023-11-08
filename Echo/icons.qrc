@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/bg">
+        <file>whitebg</file>
+        <file>logoImage</file>
+    </qresource>
+    <qresource prefix="/Icons">
+        <file>income</file>
+        <file>analytics.png</file>
+        <file>budgeting.png</file>
+        <file>expenses.png</file>
+        <file>investment.png</file>
+        <file>piggybank.png</file>
+    </qresource>
+</RCC>

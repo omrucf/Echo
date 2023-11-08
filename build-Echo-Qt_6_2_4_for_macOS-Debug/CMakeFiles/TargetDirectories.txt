@@ -1,0 +1,5 @@
+/Users/omar/Desktop/AUC/Fall 23/Software/Project/build-Echo-Qt_6_2_4_for_macOS-Debug/CMakeFiles/rebuild_cache.dir
+/Users/omar/Desktop/AUC/Fall 23/Software/Project/build-Echo-Qt_6_2_4_for_macOS-Debug/CMakeFiles/edit_cache.dir
+/Users/omar/Desktop/AUC/Fall 23/Software/Project/build-Echo-Qt_6_2_4_for_macOS-Debug/CMakeFiles/Echo.dir
+/Users/omar/Desktop/AUC/Fall 23/Software/Project/build-Echo-Qt_6_2_4_for_macOS-Debug/CMakeFiles/Echo_autogen_timestamp_deps.dir
+/Users/omar/Desktop/AUC/Fall 23/Software/Project/build-Echo-Qt_6_2_4_for_macOS-Debug/CMakeFiles/Echo_autogen.dir

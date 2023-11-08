@@ -1,0 +1,29 @@
+{
+	"BUILD_DIR" : "/Users/omar/Desktop/AUC/Fall 23/Software/Project/build-Echo-Qt_6_2_4_for_macOS-Debug/Echo_autogen",
+	"CMAKE_BINARY_DIR" : "/Users/omar/Desktop/AUC/Fall 23/Software/Project/build-Echo-Qt_6_2_4_for_macOS-Debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "/Users/omar/Desktop/AUC/Fall 23/Software/Project/build-Echo-Qt_6_2_4_for_macOS-Debug",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/Users/omar/Desktop/AUC/Fall 23/Software/Project/Echo",
+	"CMAKE_SOURCE_DIR" : "/Users/omar/Desktop/AUC/Fall 23/Software/Project/Echo",
+	"INCLUDE_DIR" : "/Users/omar/Desktop/AUC/Fall 23/Software/Project/build-Echo-Qt_6_2_4_for_macOS-Debug/Echo_autogen/include",
+	"INPUTS" : 
+	[
+		"/Users/omar/Desktop/AUC/Fall 23/Software/Project/Echo/whitebg",
+		"/Users/omar/Desktop/AUC/Fall 23/Software/Project/Echo/logoImage",
+		"/Users/omar/Desktop/AUC/Fall 23/Software/Project/Echo/analytics.png",
+		"/Users/omar/Desktop/AUC/Fall 23/Software/Project/Echo/investment.png",
+		"/Users/omar/Desktop/AUC/Fall 23/Software/Project/Echo/budgeting.png",
+		"/Users/omar/Desktop/AUC/Fall 23/Software/Project/Echo/piggybank.png",
+		"/Users/omar/Desktop/AUC/Fall 23/Software/Project/Echo/expenses.png",
+		"/Users/omar/Desktop/AUC/Fall 23/Software/Project/Echo/income"
+	],
+	"LOCK_FILE" : "/Users/omar/Desktop/AUC/Fall 23/Software/Project/build-Echo-Qt_6_2_4_for_macOS-Debug/CMakeFiles/Echo_autogen.dir/AutoRcc_icons_EWIEGA46WW_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "-name", "icons" ],
+	"OUTPUT_CHECKSUM" : "EWIEGA46WW",
+	"OUTPUT_NAME" : "qrc_icons.cpp",
+	"RCC_EXECUTABLE" : "/Users/omar/QT/6.2.4/macos/./libexec/rcc",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "/Users/omar/Desktop/AUC/Fall 23/Software/Project/build-Echo-Qt_6_2_4_for_macOS-Debug/CMakeFiles/Echo_autogen.dir/AutoRcc_icons_EWIEGA46WW_Used.txt",
+	"SOURCE" : "/Users/omar/Desktop/AUC/Fall 23/Software/Project/Echo/icons.qrc",
+	"VERBOSITY" : 0
+}

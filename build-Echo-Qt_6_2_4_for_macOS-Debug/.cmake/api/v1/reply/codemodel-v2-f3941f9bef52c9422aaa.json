@@ -1,0 +1,78 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Echo",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Echo::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Echo-Debug-5b6ef129c6e6197003bc.json",
+					"name" : "Echo",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Echo_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Echo_autogen-Debug-194e75000f79cf609a2a.json",
+					"name" : "Echo_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Echo_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Echo_autogen_timestamp_deps-Debug-f83dabd8aedbe122a3a5.json",
+					"name" : "Echo_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/omar/Desktop/AUC/Fall 23/Software/Project/build-Echo-Qt_6_2_4_for_macOS-Debug",
+		"source" : "/Users/omar/Desktop/AUC/Fall 23/Software/Project/Echo"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}
