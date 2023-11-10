@@ -255,7 +255,6 @@
       <widget class="QLabel" name="label_6">
        <property name="font">
         <font>
-         <family>Inter</family>
          <pointsize>24</pointsize>
          <bold>true</bold>
         </font>
@@ -275,7 +274,6 @@
       <widget class="QLabel" name="label_5">
        <property name="font">
         <font>
-         <family>Inter</family>
          <pointsize>24</pointsize>
          <bold>true</bold>
         </font>
@@ -284,7 +282,7 @@
         <string notr="true">color: black</string>
        </property>
        <property name="text">
-        <string>Analaytics</string>
+        <string>Analytics</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
@@ -295,7 +293,6 @@
       <widget class="QLabel" name="label_4">
        <property name="font">
         <font>
-         <family>Inter</family>
          <pointsize>24</pointsize>
          <bold>true</bold>
         </font>
@@ -315,7 +312,6 @@
       <widget class="QLabel" name="label_3">
        <property name="font">
         <font>
-         <family>Inter</family>
          <pointsize>24</pointsize>
          <bold>true</bold>
         </font>
@@ -335,7 +331,6 @@
       <widget class="QLabel" name="label_7">
        <property name="font">
         <font>
-         <family>Inter</family>
          <pointsize>24</pointsize>
          <bold>true</bold>
         </font>
@@ -344,7 +339,7 @@
         <string notr="true">color: black</string>
        </property>
        <property name="text">
-        <string>Budeting</string>
+        <string>Budgeting</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
@@ -355,7 +350,6 @@
       <widget class="QLabel" name="label_2">
        <property name="font">
         <font>
-         <family>Inter</family>
          <pointsize>24</pointsize>
          <bold>true</bold>
         </font>
