@@ -6,6 +6,9 @@ about::about(QWidget *parent) :
     ui(new Ui::about)
 {
     ui->setupUi(this);
+    this->setGeometry(80,100,1300,700);
+    QWidget::setWindowTitle("Echo");
+
     user = "";
 }
 
@@ -15,6 +18,8 @@ about::about(QString user, QWidget *parent) :
 {
     ui->setupUi(this);
     this->user = user;
+    this->setGeometry(80,100,1300,700);
+    QWidget::setWindowTitle("Echo");
 }
 
 about::~about()

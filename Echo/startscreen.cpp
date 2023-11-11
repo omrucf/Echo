@@ -9,6 +9,8 @@ startScreen::startScreen(QWidget *parent)
 {
     ui->setupUi(this);
     QWidget::setWindowTitle("Echo");
+    this->setGeometry(80,100,1300,700);
+    this->setWindowIcon(QIcon(":/Icons/logo.png"));
 
     QPixmap logoImage("/Users/omar/Desktop/AUC/Fall 23/Software/Project/icons/logoImage.png");
     logoImage.scaled(397,377);

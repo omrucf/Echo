@@ -212,7 +212,7 @@ build Echo_autogen/timestamp Echo_autogen/mocs_compilation.cpp | ${cmake_ninja_w
 #############################################
 # Custom command for Echo_autogen/EWIEGA46WW/qrc_icons.cpp
 
-build Echo_autogen/EWIEGA46WW/qrc_icons.cpp | ${cmake_ninja_workdir}Echo_autogen/EWIEGA46WW/qrc_icons.cpp: CUSTOM_COMMAND /Users/omar/Desktop/AUC/Fall$ 23/Software/Project/Echo/icons.qrc CMakeFiles/Echo_autogen.dir/AutoRcc_icons_EWIEGA46WW_Info.json /Users/omar/Desktop/AUC/Fall$ 23/Software/Project/Echo/whitebg /Users/omar/Desktop/AUC/Fall$ 23/Software/Project/Echo/logoImage /Users/omar/Desktop/AUC/Fall$ 23/Software/Project/Echo/analytics.png /Users/omar/Desktop/AUC/Fall$ 23/Software/Project/Echo/investment.png /Users/omar/Desktop/AUC/Fall$ 23/Software/Project/Echo/budgeting.png /Users/omar/Desktop/AUC/Fall$ 23/Software/Project/Echo/piggybank.png /Users/omar/Desktop/AUC/Fall$ 23/Software/Project/Echo/expenses.png /Users/omar/Desktop/AUC/Fall$ 23/Software/Project/Echo/income /Users/omar/QT/6.2.4/macos/./libexec/rcc || Echo_autogen Echo_autogen_timestamp_deps
+build Echo_autogen/EWIEGA46WW/qrc_icons.cpp | ${cmake_ninja_workdir}Echo_autogen/EWIEGA46WW/qrc_icons.cpp: CUSTOM_COMMAND /Users/omar/Desktop/AUC/Fall$ 23/Software/Project/Echo/icons.qrc CMakeFiles/Echo_autogen.dir/AutoRcc_icons_EWIEGA46WW_Info.json /Users/omar/Desktop/AUC/Fall$ 23/Software/Project/Echo/whitebg /Users/omar/Desktop/AUC/Fall$ 23/Software/Project/Echo/logoImage /Users/omar/Desktop/AUC/Fall$ 23/Software/Project/Echo/analytics.png /Users/omar/Desktop/AUC/Fall$ 23/Software/Project/Echo/investment.png /Users/omar/Desktop/AUC/Fall$ 23/Software/Project/Echo/budgeting.png /Users/omar/Desktop/AUC/Fall$ 23/Software/Project/Echo/piggybank.png /Users/omar/Desktop/AUC/Fall$ 23/Software/Project/Echo/expenses.png /Users/omar/Desktop/AUC/Fall$ 23/Software/Project/Echo/logo.png /Users/omar/Desktop/AUC/Fall$ 23/Software/Project/Echo/income /Users/omar/QT/6.2.4/macos/./libexec/rcc || Echo_autogen Echo_autogen_timestamp_deps
   COMMAND = cd "/Users/omar/Desktop/AUC/Fall 23/Software/Project/build-Echo-Qt_6_2_4_for_macOS-Debug" && /Users/omar/QT/Tools/CMake/CMake.app/Contents/bin/cmake -E cmake_autorcc /Users/omar/Desktop/AUC/Fall\ 23/Software/Project/build-Echo-Qt_6_2_4_for_macOS-Debug/CMakeFiles/Echo_autogen.dir/AutoRcc_icons_EWIEGA46WW_Info.json Debug
   DESC = Automatic RCC for icons.qrc
   restat = 1
@@ -221,7 +221,7 @@ build Echo_autogen/EWIEGA46WW/qrc_icons.cpp | ${cmake_ninja_workdir}Echo_autogen
 #############################################
 # Phony custom command for CMakeFiles/Echo_autogen_timestamp_deps
 
-build CMakeFiles/Echo_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles/Echo_autogen_timestamp_deps: phony /Users/omar/QT/6.2.4/macos/lib/QtCore.framework/Versions/A/QtCore /Users/omar/QT/6.2.4/macos/./libexec/uic /Users/omar/QT/6.2.4/macos/lib/QtWidgets.framework/Versions/A/QtWidgets /Users/omar/QT/6.2.4/macos/./libexec/moc
+build CMakeFiles/Echo_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles/Echo_autogen_timestamp_deps: phony /Users/omar/QT/6.2.4/macos/lib/QtCore.framework/Versions/A/QtCore /Users/omar/QT/6.2.4/macos/./libexec/uic /Users/omar/QT/6.2.4/macos/./libexec/moc /Users/omar/QT/6.2.4/macos/lib/QtWidgets.framework/Versions/A/QtWidgets
 
 
 #############################################

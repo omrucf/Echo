@@ -6,6 +6,9 @@ signin::signin(QWidget *parent) :
     ui(new Ui::signin)
 {
     ui->setupUi(this);
+    this->setGeometry(80,100,1300,700);
+    QWidget::setWindowTitle("Echo");
+
 }
 
 signin::~signin()

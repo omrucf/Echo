@@ -7,7 +7,10 @@ income::income(QString user, QWidget *parent) :
     ui(new Ui::income)
 {
     ui->setupUi(this);
+    this->setGeometry(80,100,1300,700);
     this->user = user;
+    QWidget::setWindowTitle("Echo");
+
 
     QString temp;
 

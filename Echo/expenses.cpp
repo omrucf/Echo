@@ -7,6 +7,9 @@ expenses::expenses(QString user, QWidget *parent) :
     ui(new Ui::expenses)
 {
     ui->setupUi(this);
+    this->setGeometry(80,100,1300,700);
+    QWidget::setWindowTitle("Echo");
+
     this->user = user;
 
     QString temp;

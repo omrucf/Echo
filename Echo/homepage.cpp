@@ -11,6 +11,9 @@ homepage::homepage(QString user, QWidget *parent) :
     int size = 200;
 
     ui->setupUi(this);
+    this->setGeometry(80,100,1300,700);
+    QWidget::setWindowTitle("Echo");
+
     ui->income->setIcon(QIcon(":/Icons/income"));
     ui->income->setIconSize(QSize(size,size));
 

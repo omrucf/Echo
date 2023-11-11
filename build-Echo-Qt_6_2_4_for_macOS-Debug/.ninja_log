@@ -1,79 +1,21 @@
 # ninja log v5
-86	3839	1699480747489091198	CMakeFiles/Echo.dir/soon.cpp.o	54d8f1aff32cf134
-86	4334	1699480747993333165	CMakeFiles/Echo.dir/expenses.cpp.o	4aaf7ec8517bc957
-1536	4721	1699480337257894420	CMakeFiles/Echo.dir/main.cpp.o	ac3c79cd7daa48ec
-85	3836	1699480747487345132	CMakeFiles/Echo.dir/about.cpp.o	4638bd890b37c002
-65	445	1699454631211285428	CMakeFiles/Echo.dir/Echo_autogen/EWIEGA46WW/qrc_icons.cpp.o	9e4e8cf44d4dce77
-7	81	1699480743749171907	/Users/omar/Desktop/AUC/Fall 23/Software/Project/build-Echo-Qt_6_2_4_for_macOS-Debug/Echo_autogen/timestamp	82cf562154e1c45c
-7	81	1699480743749171907	/Users/omar/Desktop/AUC/Fall 23/Software/Project/build-Echo-Qt_6_2_4_for_macOS-Debug/Echo_autogen/mocs_compilation.cpp	82cf562154e1c45c
-4348	4615	1699480748277146673	Echo.app/Contents/MacOS/Echo	4d2f3f21aa0b8f63
-85	3974	1699480747628565874	CMakeFiles/Echo.dir/signin.cpp.o	e91f8dc912f0c94b
-7	81	1699480743749171907	Echo_autogen/timestamp	82cf562154e1c45c
-85	4068	1699480747723175557	CMakeFiles/Echo.dir/signup.cpp.o	a857c9de104c8a16
-85	3826	1699480747470384934	CMakeFiles/Echo.dir/startscreen.cpp.o	d9c3ddea306c8b4
-1536	4757	1699480337302833370	CMakeFiles/Echo.dir/Echo_autogen/mocs_compilation.cpp.o	3f231ef0d31b4b84
-85	3863	1699480747515447965	CMakeFiles/Echo.dir/homepage.cpp.o	413d8da3ef458de9
-85	3832	1699480747484341580	CMakeFiles/Echo.dir/features.cpp.o	980ba470224fbe82
-7	81	1699480743749171907	Echo_autogen/mocs_compilation.cpp	82cf562154e1c45c
-48	64	1699454630836460276	/Users/omar/Desktop/AUC/Fall 23/Software/Project/build-Echo-Qt_6_2_4_for_macOS-Debug/Echo_autogen/EWIEGA46WW/qrc_icons.cpp	4ab81258edcefd43
-0	176	1699479000635964694	build.ninja	af5e322e2942a28a
-48	64	1699454630836460276	Echo_autogen/EWIEGA46WW/qrc_icons.cpp	4ab81258edcefd43
-86	4348	1699480748007129147	CMakeFiles/Echo.dir/income.cpp.o	6cdc7e0673685c7f
-7	86	1699481272890308669	Echo_autogen/timestamp	82cf562154e1c45c
-7	86	1699481272890308669	Echo_autogen/mocs_compilation.cpp	82cf562154e1c45c
-7	86	1699481272890308669	/Users/omar/Desktop/AUC/Fall 23/Software/Project/build-Echo-Qt_6_2_4_for_macOS-Debug/Echo_autogen/timestamp	82cf562154e1c45c
-7	86	1699481272890308669	/Users/omar/Desktop/AUC/Fall 23/Software/Project/build-Echo-Qt_6_2_4_for_macOS-Debug/Echo_autogen/mocs_compilation.cpp	82cf562154e1c45c
-89	3407	1699481276179765676	CMakeFiles/Echo.dir/about.cpp.o	4638bd890b37c002
-90	3410	1699481276181848452	CMakeFiles/Echo.dir/soon.cpp.o	54d8f1aff32cf134
-89	3413	1699481276179966966	CMakeFiles/Echo.dir/startscreen.cpp.o	d9c3ddea306c8b4
-90	3415	1699481276203176878	CMakeFiles/Echo.dir/features.cpp.o	980ba470224fbe82
-90	3440	1699481276229594642	CMakeFiles/Echo.dir/homepage.cpp.o	413d8da3ef458de9
-89	3503	1699481276296507067	CMakeFiles/Echo.dir/signup.cpp.o	a857c9de104c8a16
-90	3544	1699481276339342127	CMakeFiles/Echo.dir/signin.cpp.o	e91f8dc912f0c94b
-90	3810	1699481276605944248	CMakeFiles/Echo.dir/income.cpp.o	6cdc7e0673685c7f
-90	3815	1699481276613287153	CMakeFiles/Echo.dir/expenses.cpp.o	4aaf7ec8517bc957
-3815	4085	1699481276884865738	Echo.app/Contents/MacOS/Echo	4d2f3f21aa0b8f63
-11	88	1699481301429249363	Echo_autogen/timestamp	82cf562154e1c45c
-11	88	1699481301429249363	Echo_autogen/mocs_compilation.cpp	82cf562154e1c45c
-11	88	1699481301429249363	/Users/omar/Desktop/AUC/Fall 23/Software/Project/build-Echo-Qt_6_2_4_for_macOS-Debug/Echo_autogen/timestamp	82cf562154e1c45c
-11	88	1699481301429249363	/Users/omar/Desktop/AUC/Fall 23/Software/Project/build-Echo-Qt_6_2_4_for_macOS-Debug/Echo_autogen/mocs_compilation.cpp	82cf562154e1c45c
-92	3101	1699481304407756533	CMakeFiles/Echo.dir/startscreen.cpp.o	d9c3ddea306c8b4
-92	3103	1699481304409168522	CMakeFiles/Echo.dir/features.cpp.o	980ba470224fbe82
-93	3105	1699481304413125993	CMakeFiles/Echo.dir/soon.cpp.o	54d8f1aff32cf134
-92	3107	1699481304411495380	CMakeFiles/Echo.dir/about.cpp.o	4638bd890b37c002
-92	3115	1699481304444420804	CMakeFiles/Echo.dir/homepage.cpp.o	413d8da3ef458de9
-92	3192	1699481304523421431	CMakeFiles/Echo.dir/signup.cpp.o	a857c9de104c8a16
-92	3257	1699481304589125031	CMakeFiles/Echo.dir/signin.cpp.o	e91f8dc912f0c94b
-93	3475	1699481304808375585	CMakeFiles/Echo.dir/income.cpp.o	6cdc7e0673685c7f
-93	3485	1699481304819086839	CMakeFiles/Echo.dir/expenses.cpp.o	4aaf7ec8517bc957
-3485	3726	1699481305061673930	Echo.app/Contents/MacOS/Echo	4d2f3f21aa0b8f63
-7	76	1699481315112519606	Echo_autogen/timestamp	82cf562154e1c45c
-7	76	1699481315112519606	Echo_autogen/mocs_compilation.cpp	82cf562154e1c45c
-7	76	1699481315112519606	/Users/omar/Desktop/AUC/Fall 23/Software/Project/build-Echo-Qt_6_2_4_for_macOS-Debug/Echo_autogen/timestamp	82cf562154e1c45c
-7	76	1699481315112519606	/Users/omar/Desktop/AUC/Fall 23/Software/Project/build-Echo-Qt_6_2_4_for_macOS-Debug/Echo_autogen/mocs_compilation.cpp	82cf562154e1c45c
-79	2844	1699481317845167085	CMakeFiles/Echo.dir/about.cpp.o	4638bd890b37c002
-79	2847	1699481317845168835	CMakeFiles/Echo.dir/startscreen.cpp.o	d9c3ddea306c8b4
-80	2873	1699481317892068948	CMakeFiles/Echo.dir/homepage.cpp.o	413d8da3ef458de9
-81	2911	1699481317935753460	CMakeFiles/Echo.dir/soon.cpp.o	54d8f1aff32cf134
-79	2936	1699481317954817111	CMakeFiles/Echo.dir/features.cpp.o	980ba470224fbe82
-80	2972	1699481317997376256	CMakeFiles/Echo.dir/signin.cpp.o	e91f8dc912f0c94b
-79	2992	1699481318019030222	CMakeFiles/Echo.dir/signup.cpp.o	a857c9de104c8a16
-80	3258	1699481318287132166	CMakeFiles/Echo.dir/expenses.cpp.o	4aaf7ec8517bc957
-80	3272	1699481318301571268	CMakeFiles/Echo.dir/income.cpp.o	6cdc7e0673685c7f
-3273	3425	1699481318457390080	Echo.app/Contents/MacOS/Echo	4d2f3f21aa0b8f63
-11	1393	1699644879115396000	Echo_autogen/timestamp	82cf562154e1c45c
-11	1393	1699644879115396000	Echo_autogen/mocs_compilation.cpp	82cf562154e1c45c
-11	1393	1699644879115396000	/Users/omar/Desktop/AUC/Fall 23/Software/Project/build-Echo-Qt_6_2_4_for_macOS-Debug/Echo_autogen/timestamp	82cf562154e1c45c
-11	1393	1699644879115396000	/Users/omar/Desktop/AUC/Fall 23/Software/Project/build-Echo-Qt_6_2_4_for_macOS-Debug/Echo_autogen/mocs_compilation.cpp	82cf562154e1c45c
-1394	4249	1699644881963016489	CMakeFiles/Echo.dir/Echo_autogen/mocs_compilation.cpp.o	3f231ef0d31b4b84
+8	2689	1699646384750897856	CMakeFiles/Echo.dir/expenses.cpp.o	4aaf7ec8517bc957
 1394	4266	1699644881983828727	CMakeFiles/Echo.dir/main.cpp.o	ac3c79cd7daa48ec
-1394	4517	1699644882234256314	CMakeFiles/Echo.dir/startscreen.cpp.o	d9c3ddea306c8b4
-1394	4540	1699644882257602948	CMakeFiles/Echo.dir/about.cpp.o	4638bd890b37c002
-1395	4574	1699644882293973303	CMakeFiles/Echo.dir/features.cpp.o	980ba470224fbe82
-1395	4642	1699644882359939304	CMakeFiles/Echo.dir/homepage.cpp.o	413d8da3ef458de9
-1395	4694	1699644882411525618	CMakeFiles/Echo.dir/signin.cpp.o	e91f8dc912f0c94b
-1394	4731	1699644882451526175	CMakeFiles/Echo.dir/signup.cpp.o	a857c9de104c8a16
-1396	5016	1699644882739965494	CMakeFiles/Echo.dir/expenses.cpp.o	4aaf7ec8517bc957
-1396	5017	1699644882740991635	CMakeFiles/Echo.dir/income.cpp.o	6cdc7e0673685c7f
-4250	5605	1699644883330742538	CMakeFiles/Echo.dir/soon.cpp.o	54d8f1aff32cf134
-5605	5909	1699644883636783507	Echo.app/Contents/MacOS/Echo	4d2f3f21aa0b8f63
+7	2332	1699646384387023252	CMakeFiles/Echo.dir/about.cpp.o	4638bd890b37c002
+89	734	1699646368131031195	CMakeFiles/Echo.dir/Echo_autogen/EWIEGA46WW/qrc_icons.cpp.o	9e4e8cf44d4dce77
+9	2337	1699646384392640875	CMakeFiles/Echo.dir/soon.cpp.o	54d8f1aff32cf134
+7	61	1699646367480949229	/Users/omar/Desktop/AUC/Fall 23/Software/Project/build-Echo-Qt_6_2_4_for_macOS-Debug/Echo_autogen/timestamp	82cf562154e1c45c
+7	61	1699646367480949229	/Users/omar/Desktop/AUC/Fall 23/Software/Project/build-Echo-Qt_6_2_4_for_macOS-Debug/Echo_autogen/mocs_compilation.cpp	82cf562154e1c45c
+2696	2836	1699646384900893256	Echo.app/Contents/MacOS/Echo	4d2f3f21aa0b8f63
+7	2422	1699646384481991271	CMakeFiles/Echo.dir/signin.cpp.o	e91f8dc912f0c94b
+7	61	1699646367480949229	Echo_autogen/timestamp	82cf562154e1c45c
+7	2465	1699646384524415603	CMakeFiles/Echo.dir/signup.cpp.o	a857c9de104c8a16
+6	2329	1699646384375918336	CMakeFiles/Echo.dir/startscreen.cpp.o	d9c3ddea306c8b4
+1394	4249	1699644881963016489	CMakeFiles/Echo.dir/Echo_autogen/mocs_compilation.cpp.o	3f231ef0d31b4b84
+7	2357	1699646384415355569	CMakeFiles/Echo.dir/homepage.cpp.o	413d8da3ef458de9
+7	2333	1699646384380746269	CMakeFiles/Echo.dir/features.cpp.o	980ba470224fbe82
+7	61	1699646367480949229	Echo_autogen/mocs_compilation.cpp	82cf562154e1c45c
+64	86	1699646367505402426	/Users/omar/Desktop/AUC/Fall 23/Software/Project/build-Echo-Qt_6_2_4_for_macOS-Debug/Echo_autogen/EWIEGA46WW/qrc_icons.cpp	4ab81258edcefd43
+0	245	1699646553721874023	build.ninja	af5e322e2942a28a
+64	86	1699646367505402426	Echo_autogen/EWIEGA46WW/qrc_icons.cpp	4ab81258edcefd43
+8	2696	1699646384758277231	CMakeFiles/Echo.dir/income.cpp.o	6cdc7e0673685c7f

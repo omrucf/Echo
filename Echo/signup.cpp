@@ -9,6 +9,7 @@ signup::signup(QWidget *parent)
 {
     ui->setupUi(this);
     QWidget::setWindowTitle("Echo");
+    this->setGeometry(80,100,1300,700);
 
 
 }

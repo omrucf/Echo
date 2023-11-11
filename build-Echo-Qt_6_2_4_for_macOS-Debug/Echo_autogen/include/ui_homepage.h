@@ -140,7 +140,6 @@ public:
         label_6 = new QLabel(gridLayoutWidget_2);
         label_6->setObjectName(QString::fromUtf8("label_6"));
         QFont font2;
-        font2.setFamilies({QString::fromUtf8("Inter")});
         font2.setPointSize(24);
         font2.setBold(true);
         label_6->setFont(font2);
@@ -274,10 +273,10 @@ public:
         aboutB->setText(QCoreApplication::translate("homepage", "About", nullptr));
         logoImage->setText(QString());
         label_6->setText(QCoreApplication::translate("homepage", "Expenses", nullptr));
-        label_5->setText(QCoreApplication::translate("homepage", "Analaytics", nullptr));
+        label_5->setText(QCoreApplication::translate("homepage", "Analytics", nullptr));
         label_4->setText(QCoreApplication::translate("homepage", "Investments", nullptr));
         label_3->setText(QCoreApplication::translate("homepage", "Savings", nullptr));
-        label_7->setText(QCoreApplication::translate("homepage", "Budeting", nullptr));
+        label_7->setText(QCoreApplication::translate("homepage", "Budgeting", nullptr));
         label_2->setText(QCoreApplication::translate("homepage", "Income", nullptr));
         income->setText(QString());
         expenses->setText(QString());

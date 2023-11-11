@@ -6,6 +6,9 @@ features::features(QWidget *parent) :
     ui(new Ui::features)
 {
     ui->setupUi(this);
+    this->setGeometry(80,100,1300,700);
+    QWidget::setWindowTitle("Echo");
+
     user = "";
 }
 
@@ -15,6 +18,8 @@ features::features(QString user, QWidget *parent) :
 {
     ui->setupUi(this);
     this->user = user;
+    this->setGeometry(80,100,1300,700);
+    QWidget::setWindowTitle("Echo");
 
 }
 
