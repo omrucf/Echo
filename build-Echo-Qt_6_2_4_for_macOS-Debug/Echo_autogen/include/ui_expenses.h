@@ -11,6 +11,7 @@
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QComboBox>
 #include <QtWidgets/QGraphicsView>
 #include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QLabel>
@@ -37,7 +38,6 @@ public:
     QPushButton *featuresB;
     QPushButton *aboutB;
     QLabel *logoImage;
-    QLineEdit *sourceE;
     QLabel *label_4;
     QLabel *label_3;
     QLineEdit *expensesE;
@@ -46,7 +46,9 @@ public:
     QLabel *label_2;
     QLabel *total;
     QListWidget *expensess;
-    QPushButton *saveB;
+    QComboBox *sourceE;
+    QLineEdit *Other;
+    QListWidget *expensesvec;
     QStatusBar *statusbar;
     QMenuBar *menubar;
 
@@ -125,12 +127,6 @@ public:
         logoImage = new QLabel(centralwidget);
         logoImage->setObjectName(QString::fromUtf8("logoImage"));
         logoImage->setGeometry(QRect(843, 168, 397, 377));
-        sourceE = new QLineEdit(centralwidget);
-        sourceE->setObjectName(QString::fromUtf8("sourceE"));
-        sourceE->setGeometry(QRect(60, 310, 356, 40));
-        sourceE->setFont(font1);
-        sourceE->setStyleSheet(QString::fromUtf8("background-color: white; color: black; border-width: 1px; border-style: solid; border-color: rgba(68, 69, 69, 181);\n"
-""));
         label_4 = new QLabel(centralwidget);
         label_4->setObjectName(QString::fromUtf8("label_4"));
         label_4->setGeometry(QRect(60, 287, 124, 24));
@@ -149,7 +145,7 @@ public:
 ""));
         addB = new QPushButton(centralwidget);
         addB->setObjectName(QString::fromUtf8("addB"));
-        addB->setGeometry(QRect(276, 400, 140, 30));
+        addB->setGeometry(QRect(64, 400, 140, 30));
         addB->setCursor(QCursor(Qt::PointingHandCursor));
         addB->setStyleSheet(QString::fromUtf8("background-color: black;\n"
 "color: white;\n"
@@ -180,17 +176,52 @@ public:
         expensess->setGeometry(QRect(880, 180, 401, 401));
         expensess->setStyleSheet(QString::fromUtf8("background-color: rgba(115, 117, 117, 147);\n"
 "color: red"));
-        saveB = new QPushButton(centralwidget);
-        saveB->setObjectName(QString::fromUtf8("saveB"));
-        saveB->setGeometry(QRect(63, 400, 140, 30));
-        saveB->setCursor(QCursor(Qt::PointingHandCursor));
-        saveB->setStyleSheet(QString::fromUtf8("background-color: black;\n"
-"color: white;\n"
-"border-style: solid;\n"
-"border-color: black;\n"
-"border-width: 2px;\n"
-"border-radius: 15px;"));
+        sourceE = new QComboBox(centralwidget);
+        sourceE->addItem(QString());
+        sourceE->addItem(QString());
+        sourceE->addItem(QString());
+        sourceE->addItem(QString());
+        sourceE->addItem(QString());
+        sourceE->addItem(QString());
+        sourceE->addItem(QString());
+        sourceE->addItem(QString());
+        sourceE->addItem(QString());
+        sourceE->addItem(QString());
+        sourceE->addItem(QString());
+        sourceE->addItem(QString());
+        sourceE->addItem(QString());
+        sourceE->addItem(QString());
+        sourceE->addItem(QString());
+        sourceE->setObjectName(QString::fromUtf8("sourceE"));
+        sourceE->setGeometry(QRect(60, 310, 356, 40));
+        sourceE->setStyleSheet(QString::fromUtf8("background-color: white; color: black; border-width: 1px; border-style: solid; border-color: rgba(68, 69, 69, 181);\n"
+""));
+        Other = new QLineEdit(centralwidget);
+        Other->setObjectName(QString::fromUtf8("Other"));
+        Other->setGeometry(QRect(60, 310, 356, 40));
+        Other->setFont(font1);
+        Other->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0)\n"
+""));
+        expensesvec = new QListWidget(centralwidget);
+        expensesvec->setObjectName(QString::fromUtf8("expensesvec"));
+        expensesvec->setGeometry(QRect(-555, -5555, 256, 192));
         expenses->setCentralWidget(centralwidget);
+        Other->raise();
+        navbar->raise();
+        whitebg->raise();
+        label->raise();
+        horizontalLayoutWidget->raise();
+        logoImage->raise();
+        label_4->raise();
+        label_3->raise();
+        expensesE->raise();
+        addB->raise();
+        error->raise();
+        label_2->raise();
+        total->raise();
+        expensess->raise();
+        sourceE->raise();
+        expensesvec->raise();
         statusbar = new QStatusBar(expenses);
         statusbar->setObjectName(QString::fromUtf8("statusbar"));
         expenses->setStatusBar(statusbar);
@@ -218,7 +249,22 @@ public:
         error->setText(QString());
         label_2->setText(QCoreApplication::translate("expenses", "Total: -", nullptr));
         total->setText(QCoreApplication::translate("expenses", "0", nullptr));
-        saveB->setText(QCoreApplication::translate("expenses", "Save", nullptr));
+        sourceE->setItemText(0, QCoreApplication::translate("expenses", "Select an item", nullptr));
+        sourceE->setItemText(1, QCoreApplication::translate("expenses", "Housing", nullptr));
+        sourceE->setItemText(2, QCoreApplication::translate("expenses", "Utilities", nullptr));
+        sourceE->setItemText(3, QCoreApplication::translate("expenses", "Groceries", nullptr));
+        sourceE->setItemText(4, QCoreApplication::translate("expenses", "Transportation", nullptr));
+        sourceE->setItemText(5, QCoreApplication::translate("expenses", "Healthcare", nullptr));
+        sourceE->setItemText(6, QCoreApplication::translate("expenses", "Education", nullptr));
+        sourceE->setItemText(7, QCoreApplication::translate("expenses", "Dining", nullptr));
+        sourceE->setItemText(8, QCoreApplication::translate("expenses", "Clothing", nullptr));
+        sourceE->setItemText(9, QCoreApplication::translate("expenses", "Personal Care", nullptr));
+        sourceE->setItemText(10, QCoreApplication::translate("expenses", "Childrne", nullptr));
+        sourceE->setItemText(11, QCoreApplication::translate("expenses", "Pets", nullptr));
+        sourceE->setItemText(12, QCoreApplication::translate("expenses", "Savings & Investments", nullptr));
+        sourceE->setItemText(13, QCoreApplication::translate("expenses", "Gifts & Donations", nullptr));
+        sourceE->setItemText(14, QCoreApplication::translate("expenses", "Other", nullptr));
+
     } // retranslateUi
 
 };

@@ -767,6 +767,8 @@ Echo_autogen/timestamp: \
   /Users/omar/Desktop/AUC/Fall\ 23/Software/Project/Echo/CMakeLists.txt \
   /Users/omar/Desktop/AUC/Fall\ 23/Software/Project/Echo/about.cpp \
   /Users/omar/Desktop/AUC/Fall\ 23/Software/Project/Echo/about.h \
+  /Users/omar/Desktop/AUC/Fall\ 23/Software/Project/Echo/budgeting.cpp \
+  /Users/omar/Desktop/AUC/Fall\ 23/Software/Project/Echo/budgeting.h \
   /Users/omar/Desktop/AUC/Fall\ 23/Software/Project/Echo/expenses.cpp \
   /Users/omar/Desktop/AUC/Fall\ 23/Software/Project/Echo/expenses.h \
   /Users/omar/Desktop/AUC/Fall\ 23/Software/Project/Echo/features.cpp \
@@ -1012,6 +1014,7 @@ Echo_autogen/timestamp: \
   /Users/omar/QT/Tools/CMake/CMake.app/Contents/share/cmake-3.21/Modules/Platform/Darwin.cmake \
   /Users/omar/QT/Tools/CMake/CMake.app/Contents/share/cmake-3.21/Modules/Platform/UnixPaths.cmake \
   /Users/omar/Desktop/AUC/Fall\ 23/Software/Project/Echo/about.ui \
+  /Users/omar/Desktop/AUC/Fall\ 23/Software/Project/Echo/budgeting.ui \
   /Users/omar/Desktop/AUC/Fall\ 23/Software/Project/Echo/expenses.ui \
   /Users/omar/Desktop/AUC/Fall\ 23/Software/Project/Echo/features.ui \
   /Users/omar/Desktop/AUC/Fall\ 23/Software/Project/Echo/homepage.ui \

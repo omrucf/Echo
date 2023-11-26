@@ -1,13 +1,13 @@
 /********************************************************************************
-** Form generated from reading UI file 'income.ui'
+** Form generated from reading UI file 'budgeting.ui'
 **
 ** Created by: Qt User Interface Compiler version 6.2.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
 
-#ifndef UI_INCOME_H
-#define UI_INCOME_H
+#ifndef UI_BUDGETING_H
+#define UI_BUDGETING_H
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
@@ -25,7 +25,7 @@
 
 QT_BEGIN_NAMESPACE
 
-class Ui_income
+class Ui_budgeting
 {
 public:
     QWidget *centralwidget;
@@ -38,24 +38,22 @@ public:
     QPushButton *featuresB;
     QPushButton *aboutB;
     QLabel *logoImage;
-    QLabel *label_4;
     QLabel *label_3;
-    QLineEdit *incomeE;
+    QListWidget *budgetings;
+    QComboBox *categories;
     QPushButton *addB;
+    QLineEdit *budgetE;
+    QLabel *label_4;
     QLabel *error;
-    QLabel *label_2;
-    QLabel *total;
-    QListWidget *incomes;
-    QComboBox *sourceE;
     QStatusBar *statusbar;
     QMenuBar *menubar;
 
-    void setupUi(QMainWindow *income)
+    void setupUi(QMainWindow *budgeting)
     {
-        if (income->objectName().isEmpty())
-            income->setObjectName(QString::fromUtf8("income"));
-        income->resize(1300, 700);
-        centralwidget = new QWidget(income);
+        if (budgeting->objectName().isEmpty())
+            budgeting->setObjectName(QString::fromUtf8("budgeting"));
+        budgeting->resize(1300, 700);
+        centralwidget = new QWidget(budgeting);
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
         navbar = new QGraphicsView(centralwidget);
         navbar->setObjectName(QString::fromUtf8("navbar"));
@@ -125,25 +123,39 @@ public:
         logoImage = new QLabel(centralwidget);
         logoImage->setObjectName(QString::fromUtf8("logoImage"));
         logoImage->setGeometry(QRect(843, 168, 397, 377));
-        label_4 = new QLabel(centralwidget);
-        label_4->setObjectName(QString::fromUtf8("label_4"));
-        label_4->setGeometry(QRect(60, 287, 124, 24));
-        label_4->setFont(font1);
-        label_4->setStyleSheet(QString::fromUtf8("color: black"));
         label_3 = new QLabel(centralwidget);
         label_3->setObjectName(QString::fromUtf8("label_3"));
-        label_3->setGeometry(QRect(60, 181, 124, 24));
+        label_3->setGeometry(QRect(60, 181, 151, 24));
         label_3->setFont(font1);
         label_3->setStyleSheet(QString::fromUtf8("color: black"));
-        incomeE = new QLineEdit(centralwidget);
-        incomeE->setObjectName(QString::fromUtf8("incomeE"));
-        incomeE->setGeometry(QRect(60, 205, 356, 40));
-        incomeE->setFont(font1);
-        incomeE->setStyleSheet(QString::fromUtf8("background-color: white; color: black; border-width: 1px; border-style: solid; border-color: rgba(68, 69, 69, 181);\n"
+        budgetings = new QListWidget(centralwidget);
+        budgetings->setObjectName(QString::fromUtf8("budgetings"));
+        budgetings->setGeometry(QRect(880, 180, 401, 401));
+        budgetings->setStyleSheet(QString::fromUtf8("background-color: rgba(115, 117, 117, 147);\n"
+"color: wite"));
+        categories = new QComboBox(centralwidget);
+        categories->addItem(QString());
+        categories->addItem(QString());
+        categories->addItem(QString());
+        categories->addItem(QString());
+        categories->addItem(QString());
+        categories->addItem(QString());
+        categories->addItem(QString());
+        categories->addItem(QString());
+        categories->addItem(QString());
+        categories->addItem(QString());
+        categories->addItem(QString());
+        categories->addItem(QString());
+        categories->addItem(QString());
+        categories->addItem(QString());
+        categories->addItem(QString());
+        categories->setObjectName(QString::fromUtf8("categories"));
+        categories->setGeometry(QRect(60, 310, 356, 40));
+        categories->setStyleSheet(QString::fromUtf8("background-color: white; color: black; border-width: 1px; border-style: solid; border-color: rgba(68, 69, 69, 181);\n"
 ""));
         addB = new QPushButton(centralwidget);
         addB->setObjectName(QString::fromUtf8("addB"));
-        addB->setGeometry(QRect(60, 400, 140, 30));
+        addB->setGeometry(QRect(64, 390, 140, 30));
         addB->setCursor(QCursor(Qt::PointingHandCursor));
         addB->setStyleSheet(QString::fromUtf8("background-color: black;\n"
 "color: white;\n"
@@ -151,99 +163,72 @@ public:
 "border-color: black;\n"
 "border-width: 2px;\n"
 "border-radius: 15px;"));
+        budgetE = new QLineEdit(centralwidget);
+        budgetE->setObjectName(QString::fromUtf8("budgetE"));
+        budgetE->setGeometry(QRect(60, 205, 356, 40));
+        budgetE->setFont(font1);
+        budgetE->setStyleSheet(QString::fromUtf8("background-color: white; color: black; border-width: 1px; border-style: solid; border-color: rgba(68, 69, 69, 181);\n"
+""));
+        label_4 = new QLabel(centralwidget);
+        label_4->setObjectName(QString::fromUtf8("label_4"));
+        label_4->setGeometry(QRect(60, 287, 124, 24));
+        label_4->setFont(font1);
+        label_4->setStyleSheet(QString::fromUtf8("color: black"));
         error = new QLabel(centralwidget);
         error->setObjectName(QString::fromUtf8("error"));
-        error->setGeometry(QRect(40, 560, 491, 81));
+        error->setGeometry(QRect(60, 530, 491, 81));
         error->setStyleSheet(QString::fromUtf8("color: red"));
         error->setWordWrap(true);
-        label_2 = new QLabel(centralwidget);
-        label_2->setObjectName(QString::fromUtf8("label_2"));
-        label_2->setGeometry(QRect(890, 90, 131, 61));
-        QFont font2;
-        font2.setPointSize(36);
-        font2.setBold(true);
-        label_2->setFont(font2);
-        label_2->setStyleSheet(QString::fromUtf8("color: black"));
-        total = new QLabel(centralwidget);
-        total->setObjectName(QString::fromUtf8("total"));
-        total->setGeometry(QRect(1010, 90, 201, 61));
-        total->setFont(font2);
-        total->setStyleSheet(QString::fromUtf8("color: black"));
-        incomes = new QListWidget(centralwidget);
-        incomes->setObjectName(QString::fromUtf8("incomes"));
-        incomes->setGeometry(QRect(880, 180, 401, 401));
-        incomes->setStyleSheet(QString::fromUtf8("background-color: rgba(115, 117, 117, 147);\n"
-"color: green"));
-        sourceE = new QComboBox(centralwidget);
-        sourceE->addItem(QString());
-        sourceE->addItem(QString());
-        sourceE->addItem(QString());
-        sourceE->addItem(QString());
-        sourceE->addItem(QString());
-        sourceE->addItem(QString());
-        sourceE->addItem(QString());
-        sourceE->addItem(QString());
-        sourceE->addItem(QString());
-        sourceE->addItem(QString());
-        sourceE->addItem(QString());
-        sourceE->addItem(QString());
-        sourceE->addItem(QString());
-        sourceE->addItem(QString());
-        sourceE->setObjectName(QString::fromUtf8("sourceE"));
-        sourceE->setGeometry(QRect(60, 310, 356, 40));
-        sourceE->setStyleSheet(QString::fromUtf8("background-color: white; color: black; border-width: 1px; border-style: solid; border-color: rgba(68, 69, 69, 181);\n"
-""));
-        income->setCentralWidget(centralwidget);
-        statusbar = new QStatusBar(income);
+        budgeting->setCentralWidget(centralwidget);
+        statusbar = new QStatusBar(budgeting);
         statusbar->setObjectName(QString::fromUtf8("statusbar"));
-        income->setStatusBar(statusbar);
-        menubar = new QMenuBar(income);
+        budgeting->setStatusBar(statusbar);
+        menubar = new QMenuBar(budgeting);
         menubar->setObjectName(QString::fromUtf8("menubar"));
         menubar->setGeometry(QRect(0, 0, 1300, 21));
-        income->setMenuBar(menubar);
+        budgeting->setMenuBar(menubar);
 
-        retranslateUi(income);
+        retranslateUi(budgeting);
 
-        QMetaObject::connectSlotsByName(income);
+        QMetaObject::connectSlotsByName(budgeting);
     } // setupUi
 
-    void retranslateUi(QMainWindow *income)
+    void retranslateUi(QMainWindow *budgeting)
     {
-        income->setWindowTitle(QCoreApplication::translate("income", "income", nullptr));
-        label->setText(QCoreApplication::translate("income", "Echo", nullptr));
-        homeB->setText(QCoreApplication::translate("income", "Home", nullptr));
-        featuresB->setText(QCoreApplication::translate("income", "Features", nullptr));
-        aboutB->setText(QCoreApplication::translate("income", "About", nullptr));
+        budgeting->setWindowTitle(QCoreApplication::translate("budgeting", "budgeting", nullptr));
+        label->setText(QCoreApplication::translate("budgeting", "Echo", nullptr));
+        homeB->setText(QCoreApplication::translate("budgeting", "Home", nullptr));
+        featuresB->setText(QCoreApplication::translate("budgeting", "Features", nullptr));
+        aboutB->setText(QCoreApplication::translate("budgeting", "About", nullptr));
         logoImage->setText(QString());
-        label_4->setText(QCoreApplication::translate("income", "Source", nullptr));
-        label_3->setText(QCoreApplication::translate("income", "Income (EGP)", nullptr));
-        addB->setText(QCoreApplication::translate("income", "Add", nullptr));
-        error->setText(QString());
-        label_2->setText(QCoreApplication::translate("income", "Total: ", nullptr));
-        total->setText(QCoreApplication::translate("income", "0", nullptr));
-        sourceE->setItemText(0, QCoreApplication::translate("income", "Select an item", nullptr));
-        sourceE->setItemText(1, QCoreApplication::translate("income", "Salary", nullptr));
-        sourceE->setItemText(2, QCoreApplication::translate("income", "Hourly Wages", nullptr));
-        sourceE->setItemText(3, QCoreApplication::translate("income", "Bonuses", nullptr));
-        sourceE->setItemText(4, QCoreApplication::translate("income", "Freelance Income", nullptr));
-        sourceE->setItemText(5, QCoreApplication::translate("income", "Business Revenue", nullptr));
-        sourceE->setItemText(6, QCoreApplication::translate("income", "Investments Income", nullptr));
-        sourceE->setItemText(7, QCoreApplication::translate("income", "Retal Income", nullptr));
-        sourceE->setItemText(8, QCoreApplication::translate("income", "Pension", nullptr));
-        sourceE->setItemText(9, QCoreApplication::translate("income", "Social Security", nullptr));
-        sourceE->setItemText(10, QCoreApplication::translate("income", "Child Support or Alimony", nullptr));
-        sourceE->setItemText(11, QCoreApplication::translate("income", "Scholarships/Grants", nullptr));
-        sourceE->setItemText(12, QCoreApplication::translate("income", "Gifts", nullptr));
-        sourceE->setItemText(13, QCoreApplication::translate("income", "Other", nullptr));
+        label_3->setText(QCoreApplication::translate("budgeting", "Amount (EGP)", nullptr));
+        categories->setItemText(0, QCoreApplication::translate("budgeting", "Select an item", nullptr));
+        categories->setItemText(1, QCoreApplication::translate("budgeting", "Housing", nullptr));
+        categories->setItemText(2, QCoreApplication::translate("budgeting", "Utilities", nullptr));
+        categories->setItemText(3, QCoreApplication::translate("budgeting", "Groceries", nullptr));
+        categories->setItemText(4, QCoreApplication::translate("budgeting", "Transportation", nullptr));
+        categories->setItemText(5, QCoreApplication::translate("budgeting", "Healthcare", nullptr));
+        categories->setItemText(6, QCoreApplication::translate("budgeting", "Education", nullptr));
+        categories->setItemText(7, QCoreApplication::translate("budgeting", "Dining", nullptr));
+        categories->setItemText(8, QCoreApplication::translate("budgeting", "Clothing", nullptr));
+        categories->setItemText(9, QCoreApplication::translate("budgeting", "Personal Care", nullptr));
+        categories->setItemText(10, QCoreApplication::translate("budgeting", "Childrne", nullptr));
+        categories->setItemText(11, QCoreApplication::translate("budgeting", "Pets", nullptr));
+        categories->setItemText(12, QCoreApplication::translate("budgeting", "Savings & Investments", nullptr));
+        categories->setItemText(13, QCoreApplication::translate("budgeting", "Gifts & Donations", nullptr));
+        categories->setItemText(14, QCoreApplication::translate("budgeting", "Other", nullptr));
 
+        addB->setText(QCoreApplication::translate("budgeting", "Add", nullptr));
+        label_4->setText(QCoreApplication::translate("budgeting", "Category", nullptr));
+        error->setText(QString());
     } // retranslateUi
 
 };
 
 namespace Ui {
-    class income: public Ui_income {};
+    class budgeting: public Ui_budgeting {};
 } // namespace Ui
 
 QT_END_NAMESPACE
 
-#endif // UI_INCOME_H
+#endif // UI_BUDGETING_H

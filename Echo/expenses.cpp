@@ -14,7 +14,7 @@ expenses::expenses(QString user, QWidget *parent) :
 
     QString temp;
 
-    QFile file("/Users/omar/Desktop/AUC/Fall 23/Software/Project/Echo/expenses.csv");
+    QFile file("/Users/omar/Desktop/AUC/Fall 23/Software/Project/database/expenses.csv");
         if (file.open(QIODevice::ReadOnly)) {
             QTextStream read(&file);
         while(!read.atEnd()){
@@ -31,10 +31,15 @@ expenses::expenses(QString user, QWidget *parent) :
         {
             if(expensesvec[i][0] == user)
             {
-                ui->expensess->addItem(expensesvec[i][2] + ": -" + expensesvec[i][1]);
+
+                if (ui->expensess->findItems(expensesvec[i][2], Qt::MatchStartsWith).size() != 0)
+                    ui->expensess->item(ui->expensess->row(ui->expensess->findItems(expensesvec[i][2], Qt::MatchStartsWith)[0]))->setText(expensesvec[i][2] + ": " + QString::number(expensesvec[i][1].toInt() + ui->expensess->item(ui->expensess->row(ui->expensess->findItems(expensesvec[i][2], Qt::MatchStartsWith)[0]))->text().split(": ")[1].toInt()));
+                else
+                    ui->expensess->addItem(expensesvec[i][2] + ": " + expensesvec[i][1]);
                 ui->total->setText(QString::number((std::stoi(ui->total->text().toStdString())) + std::stoi(expensesvec[i][1].toStdString())));
             }
         }
+
 }
 
 expenses::~expenses()
@@ -59,16 +64,21 @@ void expenses::on_addB_clicked()
         ui->error->setText("expenses must be a number!");
         return;
     }
-    if(ui->sourceE->text().isEmpty() || ui->expensesE->text().isEmpty())
+    if(ui->expensesE->text().isEmpty())
     {
         ui->error->setText("Please fill all boxes!");
+        return;
+    }
+    if (ui->sourceE->currentText() == "Select an item" || ui->sourceE->currentText() == "Other")
+    {
+        ui->error->setText("Please select a category");
         return;
     }
 
     QString inc, src;
 
     inc = ui->expensesE->text();
-    src = ui->sourceE->text();
+    src = ui->sourceE->currentText();
 
     QStringList templist;
     templist.append(user);
@@ -79,28 +89,33 @@ void expenses::on_addB_clicked()
 
     templist.clear();
 
-    ui->expensess->addItem(src + ": -" + inc);
+    if (ui->expensess->findItems(src, Qt::MatchStartsWith).size() != 0)
+        ui->expensess->item(ui->expensess->row(ui->expensess->findItems(src, Qt::MatchStartsWith)[0]))->setText(src + ": " + QString::number(inc.toInt() + ui->expensess->item(ui->expensess->row(ui->expensess->findItems(src, Qt::MatchStartsWith)[0]))->text().split(": ")[1].toInt()));
+    else
+        ui->expensess->addItem(src + ": " + inc);
 
     ui->total->setText(QString::number((std::stoi(ui->total->text().toStdString())) + std::stoi(inc.toStdString())));
+
+    on_saveB_clicked();
 
 }
 
 
 void expenses::on_saveB_clicked()
 {
-    QFile file("/Users/omar/Desktop/AUC/Fall 23/Software/Project/Echo/expenses.csv");
-    QTextStream write(&file);
-    if (file.open(QIODevice::WriteOnly))
-    {
-        qDebug() << "opened file" << expensesvec.size();
+    QFile file("/Users/omar/Desktop/AUC/Fall 23/Software/Project/database/expenses.csv");
+        QTextStream write(&file);
+        if (file.open(QIODevice::WriteOnly))
+        {
+            qDebug() << "opened file" << expensesvec.size();
 
-for(int i = 0; i < expensesvec.size(); i++)
-{
-    qDebug() << "hello";
-    write << expensesvec[i][0] << ',' << expensesvec[i][1] << ',' << expensesvec[i][2] << '\n';
-}
-}
-    file.close();
+    for(int i = 0; i < expensesvec.size(); i++)
+    {
+        qDebug() << "hello";
+        write << expensesvec[i][0] << ',' << expensesvec[i][1] << ',' << expensesvec[i][2] << '\n';
+    }
+    }
+        file.close();
 }
 
 void expenses::on_featuresB_clicked()
@@ -138,4 +153,21 @@ void expenses::on_homeB_clicked()
 }
 
 
+
+
+void expenses::on_sourceE_currentTextChanged(const QString &arg1)
+{
+
+}
+
+
+void expenses::on_sourceE_currentIndexChanged(int index)
+{
+    if (ui->sourceE->currentText() == "Other")
+    {
+        ui->sourceE->setEditable(QComboBox::InsertBeforeCurrent);
+    }
+    else
+        ui->sourceE->setEditable(false);
+}
 

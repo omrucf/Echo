@@ -7,6 +7,7 @@
 #include "soon.h"
 #include "about.h"
 #include "features.h"
+#include "budgeting.h"
 
 namespace Ui {
 class homepage;

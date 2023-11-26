@@ -22,7 +22,6 @@ set(PROJECT_SOURCES
         signup.cpp
         signup.h
         signup.ui
-        icons.qrc
         about.h
         about.cpp
         about.ui
@@ -44,6 +43,10 @@ set(PROJECT_SOURCES
         soon.h
         soon.cpp
         soon.ui
+        budgeting.h
+        budgeting.cpp
+        budgeting.ui
+        icons.qrc
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)

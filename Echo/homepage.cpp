@@ -59,8 +59,8 @@ void homepage::on_expenses_clicked()
 void homepage::on_budgeting_clicked()
 {
     this->close();
-    soon * s;
-    s = new soon(user);
+    budgeting * s;
+    s = new budgeting(user);
     s->show();
 }
 

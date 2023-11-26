@@ -766,6 +766,7 @@
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/xlocale/_time.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdarg.h \
   /Users/omar/Desktop/AUC/Fall\ 23/Software/Project/Echo/about.h \
+  /Users/omar/Desktop/AUC/Fall\ 23/Software/Project/Echo/budgeting.h \
   /Users/omar/Desktop/AUC/Fall\ 23/Software/Project/Echo/expenses.h \
   /Users/omar/Desktop/AUC/Fall\ 23/Software/Project/Echo/features.h \
   /Users/omar/Desktop/AUC/Fall\ 23/Software/Project/Echo/homepage.h \

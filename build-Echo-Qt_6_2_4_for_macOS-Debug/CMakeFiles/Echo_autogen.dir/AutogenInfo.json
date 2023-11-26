@@ -303,6 +303,12 @@
 			null
 		],
 		[
+			"/Users/omar/Desktop/AUC/Fall 23/Software/Project/Echo/budgeting.h",
+			"MU",
+			"EWIEGA46WW/moc_budgeting.cpp",
+			null
+		],
+		[
 			"/Users/omar/Desktop/AUC/Fall 23/Software/Project/Echo/expenses.h",
 			"MU",
 			"EWIEGA46WW/moc_expenses.cpp",
@@ -405,6 +411,11 @@
 	[
 		[
 			"/Users/omar/Desktop/AUC/Fall 23/Software/Project/Echo/about.cpp",
+			"MU",
+			null
+		],
+		[
+			"/Users/omar/Desktop/AUC/Fall 23/Software/Project/Echo/budgeting.cpp",
 			"MU",
 			null
 		],

@@ -38,6 +38,8 @@ private slots:
 
     void on_homeB_clicked();
 
+    void on_sourceE_currentIndexChanged(int index);
+
 private:
     Ui::income *ui;
 };

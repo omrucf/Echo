@@ -244,25 +244,6 @@
      <string/>
     </property>
    </widget>
-   <widget class="QLineEdit" name="sourceE">
-    <property name="geometry">
-     <rect>
-      <x>60</x>
-      <y>310</y>
-      <width>356</width>
-      <height>40</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>20</pointsize>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: white; color: black; border-width: 1px; border-style: solid; border-color: rgba(68, 69, 69, 181);
-</string>
-    </property>
-   </widget>
    <widget class="QLabel" name="label_4">
     <property name="geometry">
      <rect>
@@ -327,7 +308,7 @@
    <widget class="QPushButton" name="addB">
     <property name="geometry">
      <rect>
-      <x>276</x>
+      <x>64</x>
       <y>400</y>
       <width>140</width>
       <height>30</height>
@@ -425,30 +406,140 @@ border-radius: 15px;</string>
 color: red</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="saveB">
+   <widget class="QComboBox" name="sourceE">
     <property name="geometry">
      <rect>
-      <x>63</x>
-      <y>400</y>
-      <width>140</width>
-      <height>30</height>
+      <x>60</x>
+      <y>310</y>
+      <width>356</width>
+      <height>40</height>
      </rect>
     </property>
-    <property name="cursor">
-     <cursorShape>PointingHandCursor</cursorShape>
+    <property name="styleSheet">
+     <string notr="true">background-color: white; color: black; border-width: 1px; border-style: solid; border-color: rgba(68, 69, 69, 181);
+</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>Select an item</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Housing</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Utilities</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Groceries</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Transportation</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Healthcare</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Education</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Dining</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Clothing</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Personal Care</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Childrne</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Pets</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Savings &amp; Investments</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Gifts &amp; Donations</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Other</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLineEdit" name="Other">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>310</y>
+      <width>356</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>20</pointsize>
+     </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: black;
-color: white;
-border-style: solid;
-border-color: black;
-border-width: 2px;
-border-radius: 15px;</string>
-    </property>
-    <property name="text">
-     <string>Save</string>
+     <string notr="true">background-color: rgba(255, 255, 255, 0)
+</string>
     </property>
    </widget>
+   <widget class="QListWidget" name="expensesvec">
+    <property name="geometry">
+     <rect>
+      <x>-555</x>
+      <y>-5555</y>
+      <width>256</width>
+      <height>192</height>
+     </rect>
+    </property>
+   </widget>
+   <zorder>Other</zorder>
+   <zorder>navbar</zorder>
+   <zorder>whitebg</zorder>
+   <zorder>label</zorder>
+   <zorder>horizontalLayoutWidget</zorder>
+   <zorder>logoImage</zorder>
+   <zorder>label_4</zorder>
+   <zorder>label_3</zorder>
+   <zorder>expensesE</zorder>
+   <zorder>addB</zorder>
+   <zorder>error</zorder>
+   <zorder>label_2</zorder>
+   <zorder>total</zorder>
+   <zorder>expensess</zorder>
+   <zorder>sourceE</zorder>
+   <zorder>expensesvec</zorder>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
   <widget class="QMenuBar" name="menubar">

@@ -1,6 +1,7 @@
 #include "signin.h"
 #include "ui_signin.h"
 
+
 signin::signin(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::signin)
@@ -8,6 +9,8 @@ signin::signin(QWidget *parent) :
     ui->setupUi(this);
     this->setGeometry(80,100,1300,700);
     QWidget::setWindowTitle("Echo");
+    ui->passEdit->setEchoMode(QLineEdit::Password);
+
 
 }
 
@@ -51,7 +54,7 @@ void signin::allaccounts()
 {
     QString temp;
     QStringList tempList;
-    QFile file("/Users/omar/Desktop/AUC/Fall 23/Software/Project/users.csv");
+    QFile file("/Users/omar/Desktop/AUC/Fall 23/Software/Project/database/users.csv");
     qDebug() << "allaccounts() file opened";
         if (file.open(QIODevice::ReadOnly)) {
             QTextStream read(&file);

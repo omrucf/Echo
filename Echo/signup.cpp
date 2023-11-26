@@ -10,7 +10,8 @@ signup::signup(QWidget *parent)
     ui->setupUi(this);
     QWidget::setWindowTitle("Echo");
     this->setGeometry(80,100,1300,700);
-
+    ui->passEdit->setEchoMode(QLineEdit::Password);
+    ui->confirmEdit->setEchoMode(QLineEdit::Password);
 
 }
 
@@ -88,7 +89,7 @@ void signup::allaccounts()
 {
     QString temp;
     QStringList tempList;
-    QFile file("/Users/omar/Desktop/AUC/Fall 23/Software/Project/users.csv");
+    QFile file("/Users/omar/Desktop/AUC/Fall 23/Software/Project/database/users.csv");
     qDebug() << "allaccounts() file opened";
         if (file.open(QIODevice::ReadOnly)) {
             QTextStream read(&file);
@@ -100,7 +101,6 @@ void signup::allaccounts()
                 qDebug() << "tempList: " << tempList;
                 un[x] = tempList.at(0);
                 pw[x] = tempList.at(1);
-                ux[x] = tempList.at(2);
                 x++;
             }
         }
@@ -112,14 +112,14 @@ void signup::allaccounts()
 
 void signup::on_signupB_clicked()
 {
-    QFile file("/Users/omar/Desktop/AUC/Fall 23/Software/Project/users.csv");
+    QFile file("/Users/omar/Desktop/AUC/Fall 23/Software/Project/database/users.csv");
     if(ui->userEdit->text().isEmpty() || ui->passEdit->text().isEmpty() || ui->confirmEdit->text().isEmpty() )
     {
         ui->error->setText("Please fill all boxes");
     }
     else if (ui->checkBox->isChecked()){
         if (file.open(QIODevice::Append)) {
-            qDebug() << "append file opened";
+            qDebug() << "append file openedd";
             QTextStream write(&file);
             user = ui->userEdit->text();
             if(!checkUser(user)&&user!=""){
@@ -132,7 +132,7 @@ void signup::on_signupB_clicked()
                 else
                 {
                     qDebug() << "user and pass written";
-                    write<<user<<","<<pass<<','<<x<<"\n";
+                    write<<user<<","<<pass<<"\n";
                     this->close();
 
                     homepage* hp;
