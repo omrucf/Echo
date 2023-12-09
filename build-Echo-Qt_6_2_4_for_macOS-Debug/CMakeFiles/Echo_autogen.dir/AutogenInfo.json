@@ -333,6 +333,12 @@
 			null
 		],
 		[
+			"/Users/omar/Desktop/AUC/Fall 23/Software/Project/Echo/report.h",
+			"MU",
+			"EWIEGA46WW/moc_report.cpp",
+			null
+		],
+		[
 			"/Users/omar/Desktop/AUC/Fall 23/Software/Project/Echo/signin.h",
 			"MU",
 			"EWIEGA46WW/moc_signin.cpp",
@@ -441,6 +447,11 @@
 		],
 		[
 			"/Users/omar/Desktop/AUC/Fall 23/Software/Project/Echo/main.cpp",
+			"MU",
+			null
+		],
+		[
+			"/Users/omar/Desktop/AUC/Fall 23/Software/Project/Echo/report.cpp",
 			"MU",
 			null
 		],

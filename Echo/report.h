@@ -1,5 +1,5 @@
-#ifndef INCOME_H
-#define INCOME_H
+#ifndef REPORT_H
+#define REPORT_H
 
 #include <sstream>
 #include <QMainWindow>
@@ -12,37 +12,30 @@
 #include "about.h"
 #include "features.h"
 
-
 namespace Ui {
-class income;
+class report;
 }
 
-class income : public QMainWindow
+class report : public QMainWindow
 {
     Q_OBJECT
     std::vector<QStringList> incomesvec;
+    std::vector<QStringList> expensesvec;
 
 public:
-    explicit income(QString, QWidget *parent = nullptr);
-    ~income();
-    bool is_number(const std::string&);
+    explicit report(QString, QWidget *parent = nullptr);
+    ~report();
     QString user;
 
 private slots:
-    void on_addB_clicked();
-
-    void on_saveB_clicked();
-
     void on_featuresB_clicked();
 
     void on_aboutB_clicked();
 
     void on_homeB_clicked();
 
-    void on_sourceE_currentIndexChanged(int index);
-
 private:
-    Ui::income *ui;
+    Ui::report *ui;
 };
 
-#endif // INCOME_H
+#endif // REPORT_H

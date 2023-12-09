@@ -46,6 +46,9 @@ set(PROJECT_SOURCES
         budgeting.h
         budgeting.cpp
         budgeting.ui
+        report.cpp
+        report.h
+        report.ui
         icons.qrc
 )
 

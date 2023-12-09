@@ -771,6 +771,7 @@
   /Users/omar/Desktop/AUC/Fall\ 23/Software/Project/Echo/features.h \
   /Users/omar/Desktop/AUC/Fall\ 23/Software/Project/Echo/homepage.h \
   /Users/omar/Desktop/AUC/Fall\ 23/Software/Project/Echo/income.h \
+  /Users/omar/Desktop/AUC/Fall\ 23/Software/Project/Echo/report.h \
   /Users/omar/Desktop/AUC/Fall\ 23/Software/Project/Echo/signin.h \
   /Users/omar/Desktop/AUC/Fall\ 23/Software/Project/Echo/signup.h \
   /Users/omar/Desktop/AUC/Fall\ 23/Software/Project/Echo/soon.h \
@@ -872,8 +873,11 @@
   /Users/omar/QT/6.2.4/macos/lib/QtGui.framework/Versions/A/Headers/qtransform.h \
   /Users/omar/QT/6.2.4/macos/lib/QtGui.framework/Versions/A/Headers/qwindowdefs.h \
   /Users/omar/QT/6.2.4/macos/lib/QtWidgets.framework/Versions/A/Headers/QMainWindow \
+  /Users/omar/QT/6.2.4/macos/lib/QtWidgets.framework/Versions/A/Headers/QMessageBox \
   /Users/omar/QT/6.2.4/macos/lib/QtWidgets.framework/Versions/A/Headers/QWidget \
+  /Users/omar/QT/6.2.4/macos/lib/QtWidgets.framework/Versions/A/Headers/qdialog.h \
   /Users/omar/QT/6.2.4/macos/lib/QtWidgets.framework/Versions/A/Headers/qmainwindow.h \
+  /Users/omar/QT/6.2.4/macos/lib/QtWidgets.framework/Versions/A/Headers/qmessagebox.h \
   /Users/omar/QT/6.2.4/macos/lib/QtWidgets.framework/Versions/A/Headers/qsizepolicy.h \
   /Users/omar/QT/6.2.4/macos/lib/QtWidgets.framework/Versions/A/Headers/qtabwidget.h \
   /Users/omar/QT/6.2.4/macos/lib/QtWidgets.framework/Versions/A/Headers/qtwidgets-config.h \

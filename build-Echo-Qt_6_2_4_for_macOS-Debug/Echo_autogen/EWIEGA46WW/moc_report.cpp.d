@@ -1,4 +1,4 @@
-/Users/omar/Desktop/AUC/Fall\ 23/Software/Project/build-Echo-Qt_6_2_4_for_macOS-Debug/Echo_autogen/EWIEGA46WW/moc_soon.cpp: /Users/omar/Desktop/AUC/Fall\ 23/Software/Project/Echo/soon.h \
+/Users/omar/Desktop/AUC/Fall\ 23/Software/Project/build-Echo-Qt_6_2_4_for_macOS-Debug/Echo_autogen/EWIEGA46WW/moc_report.cpp: /Users/omar/Desktop/AUC/Fall\ 23/Software/Project/Echo/report.h \
   /Users/omar/Desktop/AUC/Fall\ 23/Software/Project/build-Echo-Qt_6_2_4_for_macOS-Debug/Echo_autogen/moc_predefs.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/Availability.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/AvailabilityInternal.h \

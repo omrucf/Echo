@@ -8,6 +8,7 @@
 #include "about.h"
 #include "features.h"
 #include "budgeting.h"
+#include "report.h"
 
 namespace Ui {
 class homepage;
@@ -36,8 +37,6 @@ private slots:
     void on_homeB_clicked();
 
     void on_savings_clicked();
-
-    void on_investment_clicked();
 
     void on_analytics_clicked();
 

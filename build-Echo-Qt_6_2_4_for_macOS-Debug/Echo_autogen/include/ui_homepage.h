@@ -38,12 +38,9 @@ public:
     QLabel *logoImage;
     QWidget *gridLayoutWidget_2;
     QGridLayout *gridLayout_2;
-    QLabel *label_6;
-    QLabel *label_5;
-    QLabel *label_4;
-    QLabel *label_3;
-    QLabel *label_7;
     QLabel *label_2;
+    QLabel *label_6;
+    QLabel *label_7;
     QWidget *horizontalLayoutWidget_2;
     QHBoxLayout *horizontalLayout;
     QPushButton *income;
@@ -52,8 +49,9 @@ public:
     QWidget *horizontalLayoutWidget_3;
     QHBoxLayout *horizontalLayout_2;
     QPushButton *savings;
-    QPushButton *investment;
     QPushButton *analytics;
+    QLabel *label_5;
+    QLabel *label_3;
     QStatusBar *statusbar;
     QMenuBar *menubar;
 
@@ -133,44 +131,28 @@ public:
         logoImage->setGeometry(QRect(843, 168, 397, 377));
         gridLayoutWidget_2 = new QWidget(centralwidget);
         gridLayoutWidget_2->setObjectName(QString::fromUtf8("gridLayoutWidget_2"));
-        gridLayoutWidget_2->setGeometry(QRect(330, 200, 631, 451));
+        gridLayoutWidget_2->setGeometry(QRect(330, 90, 631, 451));
         gridLayout_2 = new QGridLayout(gridLayoutWidget_2);
         gridLayout_2->setObjectName(QString::fromUtf8("gridLayout_2"));
         gridLayout_2->setContentsMargins(0, 0, 0, 0);
-        label_6 = new QLabel(gridLayoutWidget_2);
-        label_6->setObjectName(QString::fromUtf8("label_6"));
+        label_2 = new QLabel(gridLayoutWidget_2);
+        label_2->setObjectName(QString::fromUtf8("label_2"));
         QFont font2;
         font2.setPointSize(24);
         font2.setBold(true);
+        label_2->setFont(font2);
+        label_2->setStyleSheet(QString::fromUtf8("color: black"));
+        label_2->setAlignment(Qt::AlignCenter);
+
+        gridLayout_2->addWidget(label_2, 0, 0, 1, 1);
+
+        label_6 = new QLabel(gridLayoutWidget_2);
+        label_6->setObjectName(QString::fromUtf8("label_6"));
         label_6->setFont(font2);
         label_6->setStyleSheet(QString::fromUtf8("color: black"));
         label_6->setAlignment(Qt::AlignCenter);
 
         gridLayout_2->addWidget(label_6, 0, 1, 1, 1);
-
-        label_5 = new QLabel(gridLayoutWidget_2);
-        label_5->setObjectName(QString::fromUtf8("label_5"));
-        label_5->setFont(font2);
-        label_5->setStyleSheet(QString::fromUtf8("color: black"));
-        label_5->setAlignment(Qt::AlignCenter);
-
-        gridLayout_2->addWidget(label_5, 2, 2, 1, 1);
-
-        label_4 = new QLabel(gridLayoutWidget_2);
-        label_4->setObjectName(QString::fromUtf8("label_4"));
-        label_4->setFont(font2);
-        label_4->setStyleSheet(QString::fromUtf8("color: black"));
-        label_4->setAlignment(Qt::AlignCenter);
-
-        gridLayout_2->addWidget(label_4, 2, 1, 1, 1);
-
-        label_3 = new QLabel(gridLayoutWidget_2);
-        label_3->setObjectName(QString::fromUtf8("label_3"));
-        label_3->setFont(font2);
-        label_3->setStyleSheet(QString::fromUtf8("color: black"));
-        label_3->setAlignment(Qt::AlignCenter);
-
-        gridLayout_2->addWidget(label_3, 2, 0, 1, 1);
 
         label_7 = new QLabel(gridLayoutWidget_2);
         label_7->setObjectName(QString::fromUtf8("label_7"));
@@ -180,20 +162,9 @@ public:
 
         gridLayout_2->addWidget(label_7, 0, 2, 1, 1);
 
-        label_2 = new QLabel(gridLayoutWidget_2);
-        label_2->setObjectName(QString::fromUtf8("label_2"));
-        label_2->setFont(font2);
-        label_2->setStyleSheet(QString::fromUtf8("color: black"));
-        label_2->setAlignment(Qt::AlignCenter);
-
-        gridLayout_2->addWidget(label_2, 0, 0, 1, 1);
-
-        label_3->raise();
-        label_4->raise();
-        label_5->raise();
+        label_7->raise();
         label_2->raise();
         label_6->raise();
-        label_7->raise();
         horizontalLayoutWidget_2 = new QWidget(centralwidget);
         horizontalLayoutWidget_2->setObjectName(QString::fromUtf8("horizontalLayoutWidget_2"));
         horizontalLayoutWidget_2->setGeometry(QRect(330, 119, 631, 171));
@@ -230,18 +201,26 @@ public:
 
         horizontalLayout_2->addWidget(savings);
 
-        investment = new QPushButton(horizontalLayoutWidget_3);
-        investment->setObjectName(QString::fromUtf8("investment"));
-        investment->setCursor(QCursor(Qt::PointingHandCursor));
-
-        horizontalLayout_2->addWidget(investment);
-
         analytics = new QPushButton(horizontalLayoutWidget_3);
         analytics->setObjectName(QString::fromUtf8("analytics"));
         analytics->setCursor(QCursor(Qt::PointingHandCursor));
 
         horizontalLayout_2->addWidget(analytics);
 
+        analytics->raise();
+        savings->raise();
+        label_5 = new QLabel(centralwidget);
+        label_5->setObjectName(QString::fromUtf8("label_5"));
+        label_5->setGeometry(QRect(540, 520, 531, 41));
+        label_5->setFont(font2);
+        label_5->setStyleSheet(QString::fromUtf8("color: black"));
+        label_5->setAlignment(Qt::AlignCenter);
+        label_3 = new QLabel(centralwidget);
+        label_3->setObjectName(QString::fromUtf8("label_3"));
+        label_3->setGeometry(QRect(210, 520, 551, 40));
+        label_3->setFont(font2);
+        label_3->setStyleSheet(QString::fromUtf8("color: black"));
+        label_3->setAlignment(Qt::AlignCenter);
         homepage->setCentralWidget(centralwidget);
         whitebg->raise();
         navbar->raise();
@@ -251,6 +230,8 @@ public:
         gridLayoutWidget_2->raise();
         horizontalLayoutWidget_2->raise();
         horizontalLayoutWidget_3->raise();
+        label_5->raise();
+        label_3->raise();
         statusbar = new QStatusBar(homepage);
         statusbar->setObjectName(QString::fromUtf8("statusbar"));
         homepage->setStatusBar(statusbar);
@@ -272,18 +253,16 @@ public:
         featuresB->setText(QCoreApplication::translate("homepage", "Features", nullptr));
         aboutB->setText(QCoreApplication::translate("homepage", "About", nullptr));
         logoImage->setText(QString());
-        label_6->setText(QCoreApplication::translate("homepage", "Expenses", nullptr));
-        label_5->setText(QCoreApplication::translate("homepage", "Analytics", nullptr));
-        label_4->setText(QCoreApplication::translate("homepage", "Investments", nullptr));
-        label_3->setText(QCoreApplication::translate("homepage", "Savings", nullptr));
-        label_7->setText(QCoreApplication::translate("homepage", "Budgeting", nullptr));
         label_2->setText(QCoreApplication::translate("homepage", "Income", nullptr));
+        label_6->setText(QCoreApplication::translate("homepage", "Expenses", nullptr));
+        label_7->setText(QCoreApplication::translate("homepage", "Budgeting", nullptr));
         income->setText(QString());
         expenses->setText(QString());
         budgeting->setText(QString());
         savings->setText(QString());
-        investment->setText(QString());
         analytics->setText(QString());
+        label_5->setText(QCoreApplication::translate("homepage", "Analytics", nullptr));
+        label_3->setText(QCoreApplication::translate("homepage", "Savings", nullptr));
     } // retranslateUi
 
 };

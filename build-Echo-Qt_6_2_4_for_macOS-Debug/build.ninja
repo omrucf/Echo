@@ -169,6 +169,14 @@ build CMakeFiles/Echo.dir/budgeting.cpp.o: CXX_COMPILER__Echo_Debug /Users/omar/
   OBJECT_DIR = CMakeFiles/Echo.dir
   OBJECT_FILE_DIR = CMakeFiles/Echo.dir
 
+build CMakeFiles/Echo.dir/report.cpp.o: CXX_COMPILER__Echo_Debug /Users/omar/Desktop/AUC/Fall$ 23/Software/Project/Echo/report.cpp || cmake_object_order_depends_target_Echo
+  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = CMakeFiles/Echo.dir/report.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1 -std=gnu++17
+  INCLUDES = -I"/Users/omar/Desktop/AUC/Fall 23/Software/Project/build-Echo-Qt_6_2_4_for_macOS-Debug" -I"/Users/omar/Desktop/AUC/Fall 23/Software/Project/Echo" -I"/Users/omar/Desktop/AUC/Fall 23/Software/Project/build-Echo-Qt_6_2_4_for_macOS-Debug/Echo_autogen/include" -iframework /Users/omar/QT/6.2.4/macos/lib -isystem /Users/omar/QT/6.2.4/macos/lib/QtCore.framework/Headers -isystem /Users/omar/QT/6.2.4/macos/mkspecs/macx-clang -isystem /Users/omar/QT/6.2.4/macos/include -isystem /Users/omar/QT/6.2.4/macos/lib/QtWidgets.framework/Headers -isystem /Users/omar/QT/6.2.4/macos/lib/QtGui.framework/Headers
+  OBJECT_DIR = CMakeFiles/Echo.dir
+  OBJECT_FILE_DIR = CMakeFiles/Echo.dir
+
 build CMakeFiles/Echo.dir/Echo_autogen/EWIEGA46WW/qrc_icons.cpp.o: CXX_COMPILER__Echo_Debug /Users/omar/Desktop/AUC/Fall$ 23/Software/Project/build-Echo-Qt_6_2_4_for_macOS-Debug/Echo_autogen/EWIEGA46WW/qrc_icons.cpp || cmake_object_order_depends_target_Echo
   DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
   DEP_FILE = CMakeFiles/Echo.dir/Echo_autogen/EWIEGA46WW/qrc_icons.cpp.o.d
@@ -185,7 +193,7 @@ build CMakeFiles/Echo.dir/Echo_autogen/EWIEGA46WW/qrc_icons.cpp.o: CXX_COMPILER_
 #############################################
 # Link the executable Echo.app/Contents/MacOS/Echo
 
-build Echo.app/Contents/MacOS/Echo: CXX_EXECUTABLE_LINKER__Echo_Debug CMakeFiles/Echo.dir/Echo_autogen/mocs_compilation.cpp.o CMakeFiles/Echo.dir/main.cpp.o CMakeFiles/Echo.dir/startscreen.cpp.o CMakeFiles/Echo.dir/signup.cpp.o CMakeFiles/Echo.dir/about.cpp.o CMakeFiles/Echo.dir/features.cpp.o CMakeFiles/Echo.dir/homepage.cpp.o CMakeFiles/Echo.dir/signin.cpp.o CMakeFiles/Echo.dir/income.cpp.o CMakeFiles/Echo.dir/expenses.cpp.o CMakeFiles/Echo.dir/soon.cpp.o CMakeFiles/Echo.dir/budgeting.cpp.o CMakeFiles/Echo.dir/Echo_autogen/EWIEGA46WW/qrc_icons.cpp.o | /Users/omar/QT/6.2.4/macos/lib/QtWidgets.framework/Versions/A/QtWidgets /Users/omar/QT/6.2.4/macos/lib/QtGui.framework/Versions/A/QtGui /Users/omar/QT/6.2.4/macos/lib/QtCore.framework/Versions/A/QtCore || Echo_autogen Echo_autogen_timestamp_deps
+build Echo.app/Contents/MacOS/Echo: CXX_EXECUTABLE_LINKER__Echo_Debug CMakeFiles/Echo.dir/Echo_autogen/mocs_compilation.cpp.o CMakeFiles/Echo.dir/main.cpp.o CMakeFiles/Echo.dir/startscreen.cpp.o CMakeFiles/Echo.dir/signup.cpp.o CMakeFiles/Echo.dir/about.cpp.o CMakeFiles/Echo.dir/features.cpp.o CMakeFiles/Echo.dir/homepage.cpp.o CMakeFiles/Echo.dir/signin.cpp.o CMakeFiles/Echo.dir/income.cpp.o CMakeFiles/Echo.dir/expenses.cpp.o CMakeFiles/Echo.dir/soon.cpp.o CMakeFiles/Echo.dir/budgeting.cpp.o CMakeFiles/Echo.dir/report.cpp.o CMakeFiles/Echo.dir/Echo_autogen/EWIEGA46WW/qrc_icons.cpp.o | /Users/omar/QT/6.2.4/macos/lib/QtWidgets.framework/Versions/A/QtWidgets /Users/omar/QT/6.2.4/macos/lib/QtGui.framework/Versions/A/QtGui /Users/omar/QT/6.2.4/macos/lib/QtCore.framework/Versions/A/QtCore || Echo_autogen Echo_autogen_timestamp_deps
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1
   LINK_LIBRARIES = -Wl,-rpath,/Users/omar/QT/6.2.4/macos/lib  /Users/omar/QT/6.2.4/macos/lib/QtWidgets.framework/Versions/A/QtWidgets  /Users/omar/QT/6.2.4/macos/lib/QtGui.framework/Versions/A/QtGui  /Users/omar/QT/6.2.4/macos/lib/QtCore.framework/Versions/A/QtCore  -framework DiskArbitration  -framework IOKit  -framework  OpenGL  -framework  AGL  -framework AppKit  -framework ImageIO  -framework Metal
   OBJECT_DIR = CMakeFiles/Echo.dir
@@ -204,7 +212,7 @@ build Echo_autogen_timestamp_deps: phony CMakeFiles/Echo_autogen_timestamp_deps
 #############################################
 # Utility command for Echo_autogen
 
-build Echo_autogen: phony CMakeFiles/Echo_autogen Echo_autogen/include/ui_signup.h Echo_autogen/include/ui_startscreen.h Echo_autogen/include/ui_about.h Echo_autogen/include/ui_budgeting.h Echo_autogen/include/ui_expenses.h Echo_autogen/include/ui_features.h Echo_autogen/include/ui_homepage.h Echo_autogen/include/ui_income.h Echo_autogen/include/ui_signin.h Echo_autogen/include/ui_soon.h Echo_autogen/timestamp Echo_autogen/mocs_compilation.cpp Echo_autogen_timestamp_deps
+build Echo_autogen: phony CMakeFiles/Echo_autogen Echo_autogen/include/ui_signup.h Echo_autogen/include/ui_startscreen.h Echo_autogen/include/ui_about.h Echo_autogen/include/ui_budgeting.h Echo_autogen/include/ui_expenses.h Echo_autogen/include/ui_features.h Echo_autogen/include/ui_homepage.h Echo_autogen/include/ui_income.h Echo_autogen/include/ui_report.h Echo_autogen/include/ui_signin.h Echo_autogen/include/ui_soon.h Echo_autogen/timestamp Echo_autogen/mocs_compilation.cpp Echo_autogen_timestamp_deps
 
 
 #############################################
@@ -229,13 +237,13 @@ build Echo_autogen/EWIEGA46WW/qrc_icons.cpp | ${cmake_ninja_workdir}Echo_autogen
 #############################################
 # Phony custom command for CMakeFiles/Echo_autogen_timestamp_deps
 
-build CMakeFiles/Echo_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles/Echo_autogen_timestamp_deps: phony /Users/omar/QT/6.2.4/macos/./libexec/uic /Users/omar/QT/6.2.4/macos/lib/QtWidgets.framework/Versions/A/QtWidgets /Users/omar/QT/6.2.4/macos/./libexec/moc /Users/omar/QT/6.2.4/macos/lib/QtCore.framework/Versions/A/QtCore
+build CMakeFiles/Echo_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles/Echo_autogen_timestamp_deps: phony /Users/omar/QT/6.2.4/macos/lib/QtWidgets.framework/Versions/A/QtWidgets /Users/omar/QT/6.2.4/macos/./libexec/uic /Users/omar/QT/6.2.4/macos/./libexec/moc /Users/omar/QT/6.2.4/macos/lib/QtCore.framework/Versions/A/QtCore
 
 
 #############################################
 # Phony custom command for CMakeFiles/Echo_autogen
 
-build CMakeFiles/Echo_autogen Echo_autogen/include/ui_signup.h Echo_autogen/include/ui_startscreen.h Echo_autogen/include/ui_about.h Echo_autogen/include/ui_budgeting.h Echo_autogen/include/ui_expenses.h Echo_autogen/include/ui_features.h Echo_autogen/include/ui_homepage.h Echo_autogen/include/ui_income.h Echo_autogen/include/ui_signin.h Echo_autogen/include/ui_soon.h | ${cmake_ninja_workdir}CMakeFiles/Echo_autogen ${cmake_ninja_workdir}Echo_autogen/include/ui_signup.h ${cmake_ninja_workdir}Echo_autogen/include/ui_startscreen.h ${cmake_ninja_workdir}Echo_autogen/include/ui_about.h ${cmake_ninja_workdir}Echo_autogen/include/ui_budgeting.h ${cmake_ninja_workdir}Echo_autogen/include/ui_expenses.h ${cmake_ninja_workdir}Echo_autogen/include/ui_features.h ${cmake_ninja_workdir}Echo_autogen/include/ui_homepage.h ${cmake_ninja_workdir}Echo_autogen/include/ui_income.h ${cmake_ninja_workdir}Echo_autogen/include/ui_signin.h ${cmake_ninja_workdir}Echo_autogen/include/ui_soon.h: phony Echo_autogen/timestamp || Echo_autogen_timestamp_deps
+build CMakeFiles/Echo_autogen Echo_autogen/include/ui_signup.h Echo_autogen/include/ui_startscreen.h Echo_autogen/include/ui_about.h Echo_autogen/include/ui_budgeting.h Echo_autogen/include/ui_expenses.h Echo_autogen/include/ui_features.h Echo_autogen/include/ui_homepage.h Echo_autogen/include/ui_income.h Echo_autogen/include/ui_report.h Echo_autogen/include/ui_signin.h Echo_autogen/include/ui_soon.h | ${cmake_ninja_workdir}CMakeFiles/Echo_autogen ${cmake_ninja_workdir}Echo_autogen/include/ui_signup.h ${cmake_ninja_workdir}Echo_autogen/include/ui_startscreen.h ${cmake_ninja_workdir}Echo_autogen/include/ui_about.h ${cmake_ninja_workdir}Echo_autogen/include/ui_budgeting.h ${cmake_ninja_workdir}Echo_autogen/include/ui_expenses.h ${cmake_ninja_workdir}Echo_autogen/include/ui_features.h ${cmake_ninja_workdir}Echo_autogen/include/ui_homepage.h ${cmake_ninja_workdir}Echo_autogen/include/ui_income.h ${cmake_ninja_workdir}Echo_autogen/include/ui_report.h ${cmake_ninja_workdir}Echo_autogen/include/ui_signin.h ${cmake_ninja_workdir}Echo_autogen/include/ui_soon.h: phony Echo_autogen/timestamp || Echo_autogen_timestamp_deps
 
 # =============================================================================
 # Target aliases.

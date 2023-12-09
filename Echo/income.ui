@@ -401,8 +401,14 @@ border-radius: 15px;</string>
       <height>401</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <family>Chalkboard</family>
+      <pointsize>15</pointsize>
+     </font>
+    </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgba(115, 117, 117, 147);
+     <string notr="true">background-color: rgba(255, 255, 255, 0);
 color: green</string>
     </property>
    </widget>

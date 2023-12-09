@@ -174,7 +174,11 @@ public:
         expensess = new QListWidget(centralwidget);
         expensess->setObjectName(QString::fromUtf8("expensess"));
         expensess->setGeometry(QRect(880, 180, 401, 401));
-        expensess->setStyleSheet(QString::fromUtf8("background-color: rgba(115, 117, 117, 147);\n"
+        QFont font3;
+        font3.setFamilies({QString::fromUtf8("Chalkboard")});
+        font3.setPointSize(15);
+        expensess->setFont(font3);
+        expensess->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
 "color: red"));
         sourceE = new QComboBox(centralwidget);
         sourceE->addItem(QString());

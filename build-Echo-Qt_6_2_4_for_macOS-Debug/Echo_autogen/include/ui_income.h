@@ -172,7 +172,11 @@ public:
         incomes = new QListWidget(centralwidget);
         incomes->setObjectName(QString::fromUtf8("incomes"));
         incomes->setGeometry(QRect(880, 180, 401, 401));
-        incomes->setStyleSheet(QString::fromUtf8("background-color: rgba(115, 117, 117, 147);\n"
+        QFont font3;
+        font3.setFamilies({QString::fromUtf8("Chalkboard")});
+        font3.setPointSize(15);
+        incomes->setFont(font3);
+        incomes->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
 "color: green"));
         sourceE = new QComboBox(centralwidget);
         sourceE->addItem(QString());

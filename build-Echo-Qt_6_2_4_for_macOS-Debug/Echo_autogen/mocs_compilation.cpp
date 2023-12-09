@@ -5,6 +5,7 @@
 #include "EWIEGA46WW/moc_features.cpp"
 #include "EWIEGA46WW/moc_homepage.cpp"
 #include "EWIEGA46WW/moc_income.cpp"
+#include "EWIEGA46WW/moc_report.cpp"
 #include "EWIEGA46WW/moc_signin.cpp"
 #include "EWIEGA46WW/moc_signup.cpp"
 #include "EWIEGA46WW/moc_soon.cpp"

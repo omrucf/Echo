@@ -23,9 +23,6 @@ homepage::homepage(QString user, QWidget *parent) :
     ui->budgeting->setIcon(QIcon(":/Icons/budgeting"));
     ui->budgeting->setIconSize(QSize(size,size));
 
-    ui->investment->setIcon(QIcon(":/Icons/investment"));
-    ui->investment->setIconSize(QSize(size,size));
-
     ui->analytics->setIcon(QIcon(":/Icons/analytics"));
     ui->analytics->setIconSize(QSize(size,size));
 
@@ -110,20 +107,11 @@ void homepage::on_savings_clicked()
 }
 
 
-void homepage::on_investment_clicked()
-{
-    this->close();
-    soon * s;
-    s = new soon(user);
-    s->show();
-}
-
-
 void homepage::on_analytics_clicked()
 {
     this->close();
-    soon * s;
-    s = new soon(user);
+    report * s;
+    s = new report(user);
     s->show();
 }
 

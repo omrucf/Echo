@@ -11,6 +11,7 @@
 #include "homepage.h"
 #include "about.h"
 #include "features.h"
+#include <QMessageBox>
 
 namespace Ui {
 class expenses;
@@ -20,6 +21,7 @@ class expenses : public QMainWindow
 {
     Q_OBJECT
     std::vector<QStringList> expensesvec;
+    QMessageBox* t;
 
 public:
     explicit expenses(QString, QWidget *parent = nullptr);
