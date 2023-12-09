@@ -36,8 +36,6 @@ private slots:
 
     void on_homeB_clicked();
 
-    void on_savings_clicked();
-
     void on_analytics_clicked();
 
 private:

@@ -25,9 +25,6 @@ homepage::homepage(QString user, QWidget *parent) :
 
     ui->analytics->setIcon(QIcon(":/Icons/analytics"));
     ui->analytics->setIconSize(QSize(size,size));
-
-    ui->savings->setIcon(QIcon(":/Icons/piggybank"));
-    ui->savings->setIconSize(QSize(size,size - 40));
 }
 
 homepage::~homepage()
@@ -93,17 +90,6 @@ void homepage::on_homeB_clicked()
             hp = new homepage(user);
             hp->show();
         }
-}
-
-
-
-
-void homepage::on_savings_clicked()
-{
-    this->close();
-    soon * s;
-    s = new soon(user);
-    s->show();
 }
 
 
